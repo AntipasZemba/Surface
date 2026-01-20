@@ -1,4 +1,20 @@
+/* ========== Global Styles ========== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background:#111;
+    animation: gradient 17s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    color: white;
+    overflow-x: hidden;
+    min-height: 100vh; 
+}
 
 /* ========== Footer ========== */
 footer {
