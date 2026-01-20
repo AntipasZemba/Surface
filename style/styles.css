@@ -53,6 +53,38 @@ header {
     mix-blend-mode: difference;
 }
 
+.logo {
+    /* font-weight: bold; */
+    letter-spacing: 0.3em;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-trigger {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+}
+
+.menu-line {
+    width: 30px;
+    height: 1px;
+    background: white;
+    transition: width 0.3s ease;
+}
+
+.menu-trigger:hover .menu-line {
+    width: 50px;
+}
+
 /* ========== Footer ========== */
 footer {
     text-align: center;
