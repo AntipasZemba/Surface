@@ -296,3 +296,105 @@ footer {
     display: none;
     }
 }
+
+/* ========== About Section ========== */
+.about {
+    padding: 12rem 3rem 6rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about h1 {
+    font-size: 4rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+    letter-spacing: -0.03em;
+}
+
+.about-text {
+    max-width: 700px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.75);
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+}
+
+/* ========== Team Section ========== */
+.team {
+    padding: 6rem 3rem 8rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.team h2 {
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 4rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 3rem;
+}
+
+.team-member {
+    text-align: left;
+}
+
+.member-photo {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background: #222;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+}
+
+.team-member span {
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+}
+
+/* ========== Footer ========== */
+footer {
+    text-align: center;
+    font-size: 0.75rem;
+    opacity: 0.6;
+    padding-bottom: 3rem;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+    header {
+    padding: 1.5rem;
+    }
+
+    .about h1 {
+    font-size: 2.5rem;
+    }
+
+    .team h2 {
+    font-size: 2rem;
+    }
+
+    .member-photo {
+    height: 220px;
+    }
+}
