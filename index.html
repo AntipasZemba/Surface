@@ -58,5 +58,39 @@
     <footer>
       Surface © 2026
     </footer>
+
+    <script>
+      // Optional JS to simulate live time update for time zones
+      const updateTimes = () => {
+      const now = new Date();
+      const times = document.querySelectorAll('.times span');
+      const offsets = [-5, 0, 4, 8]; // MTL, LON, UAE, HK (approx)
+      times.forEach((span, i) => {
+          const local = new Date(now.getTime() + offsets[i] * 3600 * 1000);
+          span.textContent = span.textContent.split(' ')[0] + ' ' + local.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
+      });
+      };
+      setInterval(updateTimes, 60000);
+      updateTimes();
+
+      const menuOpen = document.getElementById('menuOpen');
+      const menuClose = document.getElementById('menuClose');
+      const navOverlay = document.getElementById('navOverlay');
+
+      menuOpen.addEventListener('click', () => {
+          navOverlay.classList.add('active');
+      });
+
+      menuClose.addEventListener('click', () => {
+          navOverlay.classList.remove('active');
+      });
+
+      // Close menu on link click
+      document.querySelectorAll('.nav-links a').forEach(link => {
+          link.addEventListener('click', () => {
+              navOverlay.classList.remove('active');
+          });
+      });
+    </script>
 </body>
 </html>
