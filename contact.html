@@ -6,6 +6,37 @@
     <title>Contact | Surface</title>
     <link rel="stylesheet" href="style/styles.css">
     <script src="JS/script.js"></script>
+    <style>
+        /* ========== Global Styles ========== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background:#111;
+        animation: gradient 17s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+        color: white;
+      overflow-x: hidden;
+      min-height: 100vh;
+      
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 0%;
+        }
+        50% {
+            background-position: 100% 100%;
+        }
+        100% {
+            background-position: 0% 0%;
+        }
+    }
+    </style>
 </head>
 <body>
     <div class="bg-container">
