@@ -29,5 +29,68 @@
             <li><a href="Service.html">Services</a></li>
         </ul>    
     </div>
+
+    <!-- Contact -->
+    <section id="contact" class="contact container" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p class="contact-lead">
+            Interested in working together? Fill this out and your email client will open ready to send.
+        </p>
+
+        <form
+            id="contactForm"
+            class="contact-form"
+            aria-describedby="contactHelp"
+            novalidate
+        >
+            <div class="form-row">
+            <label for="name">Name</label>
+            <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Your name"
+                required
+                autocomplete="name"
+            />
+            </div>
+
+            <div class="form-row">
+            <label for="email">Email</label>
+            <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+                autocomplete="email"
+            />
+            </div>
+
+            <div class="form-row">
+            <label for="message">Message</label>
+            <textarea
+                id="message"
+                name="message"
+                placeholder="Tell me about your project or goals"
+                rows="6"
+                required
+            ></textarea>
+            </div>
+
+            <p id="contactHelp" class="visually-hidden">
+            On submit your mail client will open with a prefilled subject and message.
+            </p>
+
+            <div class="form-actions">
+            <button type="submit" class="btn">Send Message</button>
+            <button type="reset" class="btn btn-ghost">Reset</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        Surface © 2026
+    </footer>
 </body>
 </html>
