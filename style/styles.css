@@ -265,3 +265,34 @@ footer {
     from { transform: translateY(-3px); }
     to { transform: translateY(3px); }
 }
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+    .hero h1 {
+    font-size: 2.2rem;
+    }
+
+    .masked-image {
+    width: 220px;
+    height: 380px;
+    }
+
+    header {
+    padding: 1.5rem 1.5rem;
+    flex-direction: row;          /* KEEP left/right */
+    justify-content: space-between;
+    }
+
+    .hero h1 {
+    font-size: 2.2rem;
+    }
+
+    .masked-image {
+    width: 220px;
+    height: 380px;
+    }
+
+    .scroll-indicator {
+    display: none;
+    }
+}
