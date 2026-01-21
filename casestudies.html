@@ -5,9 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case Study | Surface</title>
     <link rel="stylesheet" href="style/styles.css">
-    <style>
+    <!-- <style>
+    /* ========== Global Styles ========== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    </style>
+    /* Body + gradient background */
+    body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(315deg, rgb(95, 41, 91) 3%,
+            rgb(43, 80, 117) 38%,
+            rgb(40, 99, 96) 68%,
+            rgb(97, 33, 33) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    color: white;
+    }
+
+    /* Gradient animation */
+    @keyframes gradient {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+    }
+
+    /* Wave background */
+    .wave-background {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1; /* behind all content */
+    }
+
+    .wave {
+    background: rgba(255,255,255,0.25);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    bottom: 0;
+    left: 0;
+    transform: translate3d(0,0,0);
+    opacity: 0.8;
+    animation: wave 10s -3s linear infinite;
+    z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+    }
+
+    @keyframes wave {
+    2% { transform: translateX(1); }
+    25% { transform: translateX(-25%); }
+    50% { transform: translateX(-50%); }
+    75% { transform: translateX(-25%); }
+    100% { transform: translateX(1); }
+    }
+    </style> -->
 </head>
 <body>
     <div class="bg-container">
@@ -90,16 +159,16 @@
 
         <article class="project">
             <div class="project-content">
-            <h2>Array Apartment</h2>
-            <p>
-                <strong>Published • </strong> Array Apartments is a luxury apartment community located at 100 Kelly Road in Springdale, Ohio (near Cincinnati). 
-                It’s a modern residential development offering a variety of rental homes from studio units up through 3‑bedroom apartments designed for comfortable, contemporary living.
-            </p>
-            <div class="project-meta">UX · UI</div>
-            <a href="https://arrayspringdale.com/" target="_blank" class="project-btn">View Project</a>
+                <h2>Array Apartment</h2>
+                <p>
+                    <strong>Published • </strong> Array Apartments is a luxury apartment community located at 100 Kelly Road in Springdale, Ohio (near Cincinnati). 
+                    It’s a modern residential development offering a variety of rental homes from studio units up through 3‑bedroom apartments designed for comfortable, contemporary living.
+                </p>
+                <div class="project-meta">UX · UI</div>
+                <a href="https://arrayspringdale.com/" target="_blank" class="project-btn">View Project</a>
             </div>
             <div class="project-image">
-            <img src="assets/arrays.jpg" alt="Project Two e-commerce interface">
+                <img src="assets/arrays.jpg" alt="Project Two e-commerce interface">
             </div>
         </article>
     </section>
@@ -109,24 +178,24 @@
     </footer>
 
     <script>
-      const menuOpen = document.getElementById('menuOpen');
-      const menuClose = document.getElementById('menuClose');
-      const navOverlay = document.getElementById('navOverlay');
+        const menuOpen = document.getElementById('menuOpen');
+        const menuClose = document.getElementById('menuClose');
+        const navOverlay = document.getElementById('navOverlay');
 
-      menuOpen.addEventListener('click', () => {
-          navOverlay.classList.add('active');
-      });
+        menuOpen.addEventListener('click', () => {
+            navOverlay.classList.add('active');
+        });
 
-      menuClose.addEventListener('click', () => {
-          navOverlay.classList.remove('active');
-      });
+        menuClose.addEventListener('click', () => {
+            navOverlay.classList.remove('active');
+        });
 
-      // Close menu on link click
-      document.querySelectorAll('.nav-links a').forEach(link => {
-          link.addEventListener('click', () => {
-              navOverlay.classList.remove('active');
-          });
-      });
+        // Close menu on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navOverlay.classList.remove('active');
+            });
+        });
     </script>
 </body>
 </html>
