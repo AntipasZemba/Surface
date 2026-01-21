@@ -398,3 +398,127 @@ footer {
     height: 220px;
     }
 }
+
+/* ========== Page Intro ========== */
+.page-intro {
+    padding: 12rem 3rem 6rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-intro h1 {
+    font-size: 4rem;
+    font-weight: 200;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+}
+
+.page-intro p {
+    max-width: 600px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.7);
+}
+
+/* ========== Case Studies ========== */
+.projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3rem 8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8rem;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.project:nth-child(even) {
+    grid-template-columns: 1fr 1.2fr;
+}
+
+.project-image {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    background: #222;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.project:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-content h2 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.project-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 1.5rem;
+}
+
+.project-meta {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+}
+
+.project-btn {
+display: inline-block;
+margin-top: 1.5rem;
+padding: 0.6rem 2rem;
+border: 1px solid white;
+color: white;
+font-size: 0.8rem;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+text-decoration: none;
+transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+cursor: pointer;
+}
+
+.project-btn:hover {
+background: white;
+color: black;
+transform: translateY(-2px);
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 900px) {
+    .project {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    }
+
+    .project:nth-child(even) {
+    grid-template-columns: 1fr;
+    }
+
+    .project-image {
+    height: 300px;
+    }
+
+    .page-intro h1 {
+    font-size: 2.5rem;
+    }
+
+    header {
+    padding: 1.5rem;
+    }
+}
