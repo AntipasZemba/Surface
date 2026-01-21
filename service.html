@@ -13,37 +13,68 @@
       padding: 0;
     }
 
+    /* Body + gradient background */
     body {
-    font-family: 'Helvetica Neue', sans-serif;
-    background: linear-gradient(
-        315deg,
-        /* rgb(145, 93, 141) 3%,
-        rgb(92, 126, 160) 38%,
-        rgb(65, 117, 114) 68%,
-        rgb(148, 51, 51) 98% */
-        rgb(95, 41, 91) 3%,
-        rgb(43, 80, 117) 38%,
-        rgb(40, 99, 96) 68%,
-        rgb(97, 33, 33) 98%
-    );
-    animation: gradient 17s ease infinite;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(315deg, rgb(95, 41, 91) 3%,
+    rgb(43, 80, 117) 38%,
+    rgb(40, 99, 96) 68%,
+    rgb(97, 33, 33) 98%);
+    animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
     color: white;
-    overflow-x: hidden;
-    min-height: 100vh;
     }
 
+    /* Gradient animation */
     @keyframes gradient {
-        0% {
-            background-position: 0% 0%;
-        }
-        50% {
-            background-position: 100% 100%;
-        }
-        100% {
-            background-position: 0% 0%;
-        }
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+    }
+
+    /* Wave background */
+    .wave-background {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1; /* behind all content */
+    }
+
+    .wave {
+    background: rgba(255,255,255,0.25);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    bottom: 0;
+    left: 0;
+    transform: translate3d(0,0,0);
+    opacity: 0.8;
+    animation: wave 10s -3s linear infinite;
+    z-index: -1;
+    }
+
+    .wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+    }
+
+    .wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+    }
+
+    @keyframes wave {
+    2% { transform: translateX(1); }
+    25% { transform: translateX(-25%); }
+    50% { transform: translateX(-50%); }
+    75% { transform: translateX(-25%); }
+    100% { transform: translateX(1); }
     }
 
     /* ========== Header ========== */
@@ -262,6 +293,11 @@
 </head>
 
 <body>
+    <div class="wave-background">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
   <header>
     <a href="index.html" class="logo">SURFACE</a>
     <button class="menu-trigger" id="menuOpen">MENU</button>
