@@ -522,3 +522,125 @@ transform: translateY(-2px);
     padding: 1.5rem;
     }
 }
+
+/* ========== Contact Section (Editorial Style) ========== */
+.contact {
+min-height: 90vh;
+padding: 10rem 3rem 6rem;
+max-width: 900px;
+margin: 0 auto;
+}
+
+.contact h2 {
+font-size: 4rem;
+font-weight: 100;
+margin-bottom: 1.5rem;
+letter-spacing: -0.03em;
+}
+
+.contact-lead {
+max-width: 520px;
+font-size: 1rem;
+line-height: 1.6;
+color: rgba(255,255,255,0.7);
+margin-bottom: 4rem;
+}
+
+.contact-form {
+max-width: 600px;
+}
+
+.form-row {
+display: flex;
+flex-direction: column;
+margin-bottom: 2.5rem;
+}
+
+.form-row label {
+font-size: 0.75rem;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+margin-bottom: 0.75rem;
+color: rgba(255,255,255,0.6);
+}
+
+.form-row input,
+.form-row textarea {
+background: transparent;
+border: none;
+border-bottom: 1px solid rgba(255,255,255,0.3);
+padding: 0.75rem 0;
+font-size: 1rem;
+color: white;
+outline: none;
+}
+
+.form-row input::placeholder,
+.form-row textarea::placeholder {
+color: rgba(255,255,255,0.4);
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+border-bottom-color: white;
+}
+
+.form-actions {
+display: flex;
+gap: 1.5rem;
+margin-top: 3rem;
+}
+
+.btn {
+background: none;
+border: 1px solid white;
+color: white;
+padding: 0.75rem 2.5rem;
+font-size: 0.75rem;
+letter-spacing: 0.25em;
+cursor: pointer;
+transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+background: white;
+color: black;
+}
+
+.btn-ghost {
+border-color: rgba(255,255,255,0.4);
+color: rgba(255,255,255,0.7);
+}
+
+.btn-ghost:hover {
+background: rgba(255,255,255,0.1);
+color: white;
+}
+
+.alt-contact {
+margin-top: 5rem;
+font-size: 0.9rem;
+color: rgba(255,255,255,0.6);
+}
+
+.alt-contact a {
+color: white;
+text-decoration: none;
+border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.alt-contact a:hover {
+border-bottom-color: white;
+}
+
+/* Accessibility */
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+overflow: hidden;
+clip: rect(0,0,0,0);
+white-space: nowrap;
+border: 0;
+}
