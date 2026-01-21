@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact | Surface</title>
     <link rel="stylesheet" href="style/styles.css">
     <script src="JS/script.js"></script>
 </head>
@@ -92,5 +92,59 @@
     <footer>
         Surface © 2026
     </footer>
+
+    <script>
+        const menuOpen = document.getElementById('menuOpen');
+        const menuClose = document.getElementById('menuClose');
+        const navOverlay = document.getElementById('navOverlay');
+
+        menuOpen.addEventListener('click', () => {
+            navOverlay.classList.add('active');
+        });
+
+        menuClose.addEventListener('click', () => {
+            navOverlay.classList.remove('active');
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navOverlay.classList.remove('active');
+            });
+        });
+
+        //contact
+        document.getElementById('contactForm').addEventListener('submit', function (e) {e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const subject = encodeURIComponent('New project inquiry');
+            const body = encodeURIComponent(
+            `Name: ${name}\nEmail: ${email}\n\n${message}`
+            );
+
+            window.location.href = `mailto:antipaszemba@icloud.com?subject=${subject}&body=${body}`;
+        });
+
+        let lastScrollY = window.scrollY;
+        const header = document.querySelector("header");
+
+        window.addEventListener("scroll", () => {
+            // Only apply on mobile
+            if (window.innerWidth > 768) return;
+
+            if (window.scrollY > lastScrollY && window.scrollY > 80) {
+            // Scrolling down
+            header.classList.add("hide");
+            } else {
+            // Scrolling up
+            header.classList.remove("hide");
+            }
+
+            lastScrollY = window.scrollY;
+        });
+    </script>
 </body>
 </html>
