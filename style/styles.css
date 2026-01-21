@@ -644,3 +644,122 @@ clip: rect(0,0,0,0);
 white-space: nowrap;
 border: 0;
 }
+
+@media (max-width: 768px) {
+    header.hide {
+        transform: translateY(-100%);
+    }
+}
+
+/* ========== Plans Section ========== */
+.plans {
+    padding: 12rem 3rem 6rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.plans h2 {
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.plans-intro {
+    max-width: 800px;
+    color: rgba(255,255,255,0.75);
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+.plans-subheading {
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 3rem 0 1.5rem;
+}
+
+.plan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.plan-card {
+    background: rgba(255,255,255,0.05);
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.1);
+}
+
+.plan-card h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.plan-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 1rem;
+}
+
+.plan-features {
+    list-style: disc;
+    margin-left: 1.2rem;
+    margin-bottom: 1rem;
+    color: rgba(255,255,255,0.7);
+}
+
+.plan-features li {
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.plan-note {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 2rem;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    transition: background 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+    header {
+    padding: 1.5rem;
+    }
+
+    .plans h2 {
+    font-size: 2rem;
+    }
+
+    .plans-subheading {
+    font-size: 1.5rem;
+    }
+}
