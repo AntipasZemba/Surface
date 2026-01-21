@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services — Surface</title>
+
   <style>
     /* ========== Global Styles ========== */
     * {
@@ -229,169 +230,162 @@
 </head>
 
 <body>
-    <div class="bg-container">
-        <div class="animated-bg"></div>
-        <div class="bg-overlay"></div>
+  <header>
+    <a href="Main.html" class="logo">SURFACE</a>
+    <button class="menu-trigger" id="menuOpen">MENU</button>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay">
+    <button class="close-menu" id="menuClose">&times;</button>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="CaseStudies.html">Case Studies</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="Service.html">Services</a></li>
+    </ul>
+  </div>
+
+  <!-- Plans Section -->
+  <section id="plans" class="plans container" aria-labelledby="plans-heading">
+    <h2 id="plans-heading">Plans & Services</h2>
+    <p class="plans-intro">
+      Every business deserves a website that looks amazing, loads fast, and grows with them.
+      Choose the plan that fits your goals from a simple one-page site to full brand management.
+    </p>
+
+    <!-- WEBSITE BUILD PACKAGES -->
+    <h3 class="plans-subheading">Website Build Packages</h3>
+    <div class="plan-grid">
+      <!-- Starter -->
+      <div class="plan-card" role="region" aria-labelledby="starter-title">
+        <h4 id="starter-title">Starter</h4>
+        <p class="plan-desc">
+          A professional one-page website that captures attention and represents your brand beautifully.
+        </p>
+        <ul class="plan-features">
+          <li>1 professionally designed page (scrolling layout)</li>
+          <li>Responsive & mobile-friendly design</li>
+          <li>Modern UI with smooth animations</li>
+          <li>Basic SEO setup</li>
+          <li>Contact or reservation form integration</li>
+        </ul>
+        <!-- <p class="price">Starting from $150 to $250</p> -->
+        <p class="plan-note">Timeline: 5–7 days | Ideal for startups or small businesses</p>
+        <p><a href="Contact.html" class="btn hire-btn" data-plan="Starter">Let's Discuss</a></p>
+      </div>
+
+      <!-- Professional -->
+      <div class="plan-card" role="region" aria-labelledby="pro-title">
+        <h4 id="pro-title">Professional</h4>
+        <p class="plan-desc">
+          Multi-page website designed to impress. Ideal for restaurants, cafés, and growing brands.
+        </p>
+        <ul class="plan-features">
+          <li>Up to 5 custom pages</li>
+          <li>Parallax hero sections & slideshows</li>
+          <li>Mobile-first optimization</li>
+          <li>Google Maps & WhatsApp integration</li>
+          <li>Performance & SEO enhancements</li>
+        </ul>
+        <!-- <p class="price">Starting from $350 to $550</p> -->
+        <p class="plan-note">Timeline: 10–14 days | Best value for restaurants & businesses</p>
+        <p><a href="Contact.html" class="btn hire-btn" data-plan="Professional">Let's Discuss</a></p>
+      </div>
+
+      <!-- Premium -->
+      <div class="plan-card" role="region" aria-labelledby="premium-title">
+        <h4 id="premium-title">Premium</h4>
+        <p class="plan-desc">
+          Fully customized website or web app with unique animations, advanced features, and ongoing support.
+        </p>
+        <ul class="plan-features">
+          <li>Custom UI & design system</li>
+          <li>Advanced animations & interactions</li>
+          <li>Integrations (CMS, payments, booking, etc.)</li>
+          <li>3 months dedicated support</li>
+          <li>Bilingual or multilingual setup</li>
+        </ul>
+        <!-- <p class="price">Starting at $1,000</p> -->
+        <p class="plan-note">Timeline: 3–5 weeks | Designed for premium clients & brands</p>
+        <p><a href="Contact.html" class="btn hire-btn" data-plan="Premium">Let's Discuss</a></p>
+      </div>
     </div>
 
-    <header>
-        <a href="index.html" class="logo">SURFACE</a>
-        <button class="menu-trigger" id="menuOpen">
-            <span>MENU</span>
-        </button>
-    </header>
+    <!-- MAINTENANCE & UPDATE PLANS -->
+    <h3 class="plans-subheading">Maintenance & Update Plans</h3>
+    <p class="plans-intro">
+      Keep your website fast, secure, and up-to-date. Focus on your business — We'll handle the tech.
+    </p>
 
-    <div class="nav-overlay" id="navOverlay">
-        <button class="close-menu" id="menuClose">&times;</button>
-        <ul class="nav-links">
-            <li><a href="about.html">About</a></li>
-            <li><a href="CaseStudies.html">Case Studies</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li><a href="Service.html">Services</a></li>
-        </ul>    
+    <div class="plan-grid">
+      <!-- Basic Care -->
+      <div class="plan-card" role="region" aria-labelledby="basic-maintenance-title">
+        <h4 id="basic-maintenance-title">Basic Care</h4>
+        <p class="plan-desc">
+          Small sites with regular maintenance but minimal content changes.
+        </p>
+        <ul class="plan-features">
+          <li>Monthly backups & updates</li>
+          <li>Minor content changes (1 hr/month)</li>
+          <li>Broken link & performance checks</li>
+          <li>Email support within 48 hours</li>
+        </ul>
+        <!-- <p class="price">$50/month</p> -->
+        <p class="plan-note">Reliable maintenance for peace of mind</p>
+        <p><a href="Contact.html" class="btn hire-btn" data-plan="Basic Care">Let's Discuss</a></p>
+      </div>
+
+      <!-- Standard Care -->
+      <div class="plan-card" role="region" aria-labelledby="standard-maintenance-title">
+        <h4 id="standard-maintenance-title">Standard Care</h4>
+        <p class="plan-desc">
+          Monthly updates, SEO & speed reports, and priority support.
+        </p>
+        <ul class="plan-features">
+          <li>Everything in Basic Care</li>
+          <li>Up to 3 hrs of monthly edits</li>
+          <li>Monthly SEO & speed reports</li>
+          <li>Priority support (24h)</li>
+        </ul>
+        <!-- <p class="price">$120/month</p> -->
+        <p class="plan-note">Perfect balance of updates & ongoing care</p>
+        <p><a href="Contact.html" class="btn hire-btn" data-plan="Standard Care">Let's Discuss</a></p>
+      </div>
+
+      <!-- Premium Care -->
+      <div class="plan-card" role="region" aria-labelledby="premium-maintenance-title">
+        <h4 id="premium-maintenance-title">Premium Care</h4>
+        <p class="plan-desc">
+          Full management, unlimited updates, analytics, hosting, and direct support.
+        </p>
+        <ul class="plan-features">
+          <li>Unlimited small updates</li>
+          <li>Monthly analytics reports</li>
+          <li>Hosting & domain management</li>
+          <li>Direct WhatsApp support</li>
+        </ul>
+        <!-- <p class="price">$250/month</p> -->
+        <p class="plan-note">Worry-free, fully managed website experience</p>
+        <p><a href="Contact.html" class="btn hire-btn" data-plan="Premium Care">Let's Discuss</a></p>
+      </div>
     </div>
+  </section>
 
-    <!-- Plans Section -->
-    <sectio id="plans" class="plans container" aria-labelledby="plans-heading">
-        <h2 id="plans-heading">Plans & Services</h2>
-        <p class="plans-intro">
-            Every business deserves a website that looks amazing, loads fast, and grows with them.
-            Choose the plan that fits your goals from a simple one-page site to full brand management.
-        </p>
+  <footer>
+    Surface © 2026
+  </footer>
 
-        <!-- WEBSITE BUILD PACKAGES -->
-        <h3 class="plans-subheading">Website Build Packages</h3>
-        <div class="plan-grid">
+  <script>
+    const menuOpen = document.getElementById('menuOpen');
+    const menuClose = document.getElementById('menuClose');
+    const navOverlay = document.getElementById('navOverlay');
 
-        <!-- Starter -->
-        <div class="plan-card" role="region" aria-labelledby="starter-title">
-            <h4 id="starter-title">Starter</h4>
-            <p class="plan-desc">
-                A professional one-page website that captures attention and represents your brand beautifully.
-            </p>
-            <ul class="plan-features">
-                <li>1 professionally designed page (scrolling layout)</li>
-                <li>Responsive & mobile-friendly design</li>
-                <li>Modern UI with smooth animations</li>
-                <li>Basic SEO setup</li>
-                <li>Contact or reservation form integration</li>
-            </ul>
-            <!-- <p class="price">Starting from $150 to $250</p> -->
-            <p class="plan-note">Timeline: 5–7 days | Ideal for startups or small businesses</p>
-            <p><a href="Contact.html" class="btn hire-btn" data-plan="Starter">Let's Discuss</a></p>
-        </div>
+    menuOpen.addEventListener('click', () => navOverlay.classList.add('active'));
+    menuClose.addEventListener('click', () => navOverlay.classList.remove('active'));
 
-        <!-- Professional -->
-        <div class="plan-card" role="region" aria-labelledby="pro-title">
-            <h4 id="pro-title">Professional</h4>
-            <p class="plan-desc">
-                Multi-page website designed to impress. Ideal for restaurants, cafés, and growing brands.
-            </p>
-            <ul class="plan-features">
-                <li>Up to 5 custom pages</li>
-                <li>Parallax hero sections & slideshows</li>
-                <li>Mobile-first optimization</li>
-                <li>Google Maps & WhatsApp integration</li>
-                <li>Performance & SEO enhancements</li>
-            </ul>
-            <!-- <p class="price">Starting from $350 to $550</p> -->
-            <p class="plan-note">Timeline: 10–14 days | Best value for restaurants & businesses</p>
-            <p><a href="Contact.html" class="btn hire-btn" data-plan="Professional">Let's Discuss</a></p>
-        </div>
-
-        <!-- Premium -->
-        <div class="plan-card" role="region" aria-labelledby="premium-title">
-            <h4 id="premium-title">Premium</h4>
-            <p class="plan-desc">
-                Fully customized website or web app with unique animations, advanced features, and ongoing support.
-            </p>
-            <ul class="plan-features">
-                <li>Custom UI & design system</li>
-                <li>Advanced animations & interactions</li>
-                <li>Integrations (CMS, payments, booking, etc.)</li>
-                <li>3 months dedicated support</li>
-                <li>Bilingual or multilingual setup</li>
-            </ul>
-            <!-- <p class="price">Starting at $1,000</p> -->
-            <p class="plan-note">Timeline: 3–5 weeks | Designed for premium clients & brands</p>
-            <p><a href="Contact.html" class="btn hire-btn" data-plan="Premium">Let's Discuss</a></p>
-        </div>
-
-        <!-- MAINTENANCE & UPDATE PLANS -->
-        <h3 class="plans-subheading">Maintenance & Update Plans</h3>
-        <p class="plans-intro">
-            Keep your website fast, secure, and up-to-date. Focus on your business — We'll handle the tech.
-        </p>
-
-        <div class="plan-grid">
-            <!-- Basic Care -->
-            <div class="plan-card" role="region" aria-labelledby="basic-maintenance-title">
-                <h4 id="basic-maintenance-title">Basic Care</h4>
-                <p class="plan-desc">
-                    Small sites with regular maintenance but minimal content changes.
-                </p>
-                <ul class="plan-features">
-                    <li>Monthly backups & updates</li>
-                    <li>Minor content changes (1 hr/month)</li>
-                    <li>Broken link & performance checks</li>
-                    <li>Email support within 48 hours</li>
-                </ul>
-                <!-- <p class="price">$50/month</p> -->
-                <p class="plan-note">Reliable maintenance for peace of mind</p>
-                <p><a href="Contact.html" class="btn hire-btn" data-plan="Basic Care">Let's Discuss</a></p>
-            </div>
-
-            <!-- Standard Care -->
-            <div class="plan-card" role="region" aria-labelledby="standard-maintenance-title">
-                <h4 id="standard-maintenance-title">Standard Care</h4>
-                <p class="plan-desc">
-                    Monthly updates, SEO & speed reports, and priority support.
-                </p>
-                <ul class="plan-features">
-                    <li>Everything in Basic Care</li>
-                    <li>Up to 3 hrs of monthly edits</li>
-                    <li>Monthly SEO & speed reports</li>
-                    <li>Priority support (24h)</li>
-                </ul>
-                <!-- <p class="price">$120/month</p> -->
-                <p class="plan-note">Perfect balance of updates & ongoing care</p>
-                <p><a href="Contact.html" class="btn hire-btn" data-plan="Standard Care">Let's Discuss</a></p>
-            </div>
-
-            <!-- Premium Care -->
-            <div class="plan-card" role="region" aria-labelledby="premium-maintenance-title">
-                <h4 id="premium-maintenance-title">Premium Care</h4>
-                <p class="plan-desc">
-                Full management, unlimited updates, analytics, hosting, and direct support.
-                </p>
-                <ul class="plan-features">
-                <li>Unlimited small updates</li>
-                <li>Monthly analytics reports</li>
-                <li>Hosting & domain management</li>
-                <li>Direct WhatsApp support</li>
-                </ul>
-                <!-- <p class="price">$250/month</p> -->
-                <p class="plan-note">Worry-free, fully managed website experience</p>
-                <p><a href="Contact.html" class="btn hire-btn" data-plan="Premium Care">Let's Discuss</a></p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        Surface © 2026
-    </footer>
-
-    <script>
-        const menuOpen = document.getElementById('menuOpen');
-        const menuClose = document.getElementById('menuClose');
-        const navOverlay = document.getElementById('navOverlay');
-
-        menuOpen.addEventListener('click', () => navOverlay.classList.add('active'));
-        menuClose.addEventListener('click', () => navOverlay.classList.remove('active'));
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => navOverlay.classList.remove('active'));
-        });
-    </script>
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => navOverlay.classList.remove('active'));
+    });
+  </script>
 </body>
 </html>
