@@ -1,91 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surface</title>
-    <link rel="stylesheet" href="style/styles.css">
-    <script src="JS/script.js"></script>
-    <link rel="alternate" hreflang="en" href="https://surface-io.netlify.app/" />
-    <link rel="alternate" hreflang="fr" href="https://surface-io.netlify.app/fr/" />
-    <link rel="alternate" hreflang="x-default" href="https://surface-io.netlify.app/" />
-</head>
-<body>
-    <div class="wave-background">
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Surface</title>
+        <link rel="stylesheet" href="style/styles.css">
+        <script src="JS/script.js"></script>
+        <link rel="alternate" hreflang="en" href="https://surface-io.netlify.app/" />
+        <link rel="alternate" hreflang="fr" href="https://surface-io.netlify.app/fr/" />
+        <link rel="alternate" hreflang="x-default" href="https://surface-io.netlify.app/" />
+        <link rel="icon" href="assets/favicon2.png" type="image/png">
+    </head>
+    <body>
+        <div class="wave-background">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
 
-    <div class="bg-container">
-        <div class="animated-bg"></div>
-        <div class="bg-overlay"></div>
-    </div>
+        <div class="bg-container">
+            <div class="animated-bg"></div>
+            <div class="bg-overlay"></div>
+        </div>
 
-    <header>
-        <a href="index.html" class="logo">SURFACE</a>
-        <button class="menu-trigger" id="menuOpen">
-          <span>MENU</span>
-        </button>
-    </header>
+        <header>
+            <a href="index.html" class="logo">SURFACE</a>
+            <button class="menu-trigger" id="menuOpen">
+            <span>MENU</span>
+            </button>
+        </header>
 
-    <div class="nav-overlay" id="navOverlay">
-        <button class="close-menu" id="menuClose">&times;</button>
-        <ul class="nav-links">
-            <li><a href="about.html">About</a></li>
-            <li><a href="CaseStudies.html">Case Studies</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li><a href="Service.html">Services</a></li>
-        </ul>    
-    </div>
+        <div class="nav-overlay" id="navOverlay">
+            <button class="close-menu" id="menuClose">&times;</button>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="CaseStudies.html">Case Studies</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Service.html">Services</a></li>
+            </ul>    
+        </div>
 
-    <section class="hero">
-        <h1>
-            <span>FULL</span>
-            <span>SERVICE</span>
-            <span>CREATIVE</span>
-            <span>AGENCY</span>
-        </h1>
-        <div class="masked-image"></div>
-        <div class="scroll-indicator"></div>
-        <button class="cta-btn" onclick="window.location.href='Contact.html'">
-          Project Inquiry
-        </button>
-    </section>
+        <section class="hero">
+            <h1>
+                <span>FULL</span>
+                <span>SERVICE</span>
+                <span>CREATIVE</span>
+                <span>AGENCY</span>
+            </h1>
+            <div class="masked-image"></div>
+            <div class="scroll-indicator"></div>
+            <button class="cta-btn" onclick="window.location.href='Contact.html'">
+            Project Inquiry
+            </button>
+        </section>
 
-    <div class="side-label left">
-      <!-- DESIGN + FRONT-END + BACK-END + GRAPHIC -->
-      WEB DESIGN + DEVELOPMENT + DESIGN
-    </div>
+        <div class="side-label left">
+        <!-- DESIGN + FRONT-END + BACK-END + GRAPHIC -->
+        WEB DESIGN + DEVELOPMENT + DESIGN
+        </div>
 
-    <div class="side-label right">
-      <!-- IT + CYBER + BRANDING + PACKAGING + PRINTING -->
-      FRONT-END + BACK-END + GRAPHIC
-    </div>
-<!-- 
-    <footer>
-      Surface © 2026
-    </footer> -->
+        <div class="side-label right">
+        <!-- IT + CYBER + BRANDING + PACKAGING + PRINTING -->
+        FRONT-END + BACK-END + GRAPHIC
+        </div>
+    <!-- 
+        <footer>
+        Surface © 2026
+        </footer> -->
 
-    <script>
-      const menuOpen = document.getElementById('menuOpen');
-      const menuClose = document.getElementById('menuClose');
-      const navOverlay = document.getElementById('navOverlay');
+        <script>
+        const menuOpen = document.getElementById('menuOpen');
+        const menuClose = document.getElementById('menuClose');
+        const navOverlay = document.getElementById('navOverlay');
 
-      menuOpen.addEventListener('click', () => {
-          navOverlay.classList.add('active');
-      });
+        menuOpen.addEventListener('click', () => {
+            navOverlay.classList.add('active');
+        });
 
-      menuClose.addEventListener('click', () => {
-          navOverlay.classList.remove('active');
-      });
+        menuClose.addEventListener('click', () => {
+            navOverlay.classList.remove('active');
+        });
 
-      // Close menu on link click
-      document.querySelectorAll('.nav-links a').forEach(link => {
-          link.addEventListener('click', () => {
-              navOverlay.classList.remove('active');
-          });
-      });
-    </script>
-</body>
+        // Close menu on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navOverlay.classList.remove('active');
+            });
+        });
+        </script>
+    </body>
 </html>
