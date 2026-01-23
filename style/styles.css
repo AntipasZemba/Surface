@@ -178,7 +178,7 @@ header {
 
 /* ========== Hero Section ========== */
 .hero {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
