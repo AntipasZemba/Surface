@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services — Surface</title>
+  <link rel="icon" href="assets/favicon2.png" type="image/png">
 
   <style>
     /* ========== Global Styles ========== */
@@ -168,6 +169,84 @@
         margin: 10.5rem 0;
     }
 
+        /* ========== Intro Section ========== */
+    .intro {
+      padding: 12rem 3rem 6rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .intro h1 {
+      font-size: 3rem;
+      font-weight: 200;
+      margin-bottom: 1.5rem;
+    }
+
+    .intro p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 2rem;
+    }
+
+    .intro ul {
+      list-style: none;
+      margin-top: 2rem;
+      text-align: left;
+      display: inline-block;
+    }
+
+    .intro li {
+      margin-bottom: 0.6rem;
+      color: rgba(255,255,255,0.85);
+    }
+
+    /* ========== Process Section (GRID) ========== */
+    .process {
+      padding: 6rem 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .process h2 {
+      font-size: 2.5rem;
+      font-weight: 200;
+      margin-bottom: 1rem;
+    }
+    .process h3 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      opacity: 0.9;
+      margin-bottom: 3rem;
+    }
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .process-card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 1rem;
+      padding: 2rem;
+      text-align: left;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .process-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255,255,255,0.1);
+    }
+    .process-card h4 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      font-weight: 400;
+    }
+    .process-card p {
+      color: rgba(255,255,255,0.8);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
     /* ========== Plans Section ========== */
     .plans {
       padding: 12rem 3rem 6rem;
@@ -281,6 +360,10 @@
         padding: 1.5rem;
       }
 
+      .intro h1 { 
+        font-size: 2rem; 
+      }
+
       .plans h2 {
         font-size: 2rem;
       }
@@ -312,6 +395,54 @@
       <li><a href="Service.html">Services</a></li>
     </ul>
   </div>
+
+  <!-- Intro Section -->
+  <section class="intro">
+    <h1>Your Website, Finally Working For You</h1>
+    <p>
+      Imagine your online presence actually working like a system. A sharp, modern site that shows up on Google. Lead forms that connect directly to your CRM. A site that books appointments while you're sleeping. All built under one roof with a team that actually responds to your messages. That’s the kind of website we build for businesses just like yours.
+    </p>
+    <ul>
+      <li>✔ Custom site design using Webflow</li>
+      <li>✔ SEO on autopilot</li>
+      <li>✔ Mobile-friendly + lightning fast</li>
+      <li>✔ Connected to your CRM and marketing tools</li>
+      <li>✔ Unlimited updates and support included</li>
+      <li>✔ No tech headaches, no outsourcing</li>
+    </ul>
+  </section>
+
+  <!-- Process as 6-card grid -->
+  <section class="process">
+    <h2>Our Proven Process For Generating Results</h2>
+    <h3>6-Step Website Process</h3>
+    <div class="process-grid">
+      <div class="process-card">
+        <h4>1. Discovery Call</h4>
+        <p>A 50-minute Google Meet call to get to know each other and talk about how an optimized website could be part of your business strategy.</p>
+      </div>
+      <div class="process-card">
+        <h4>2. Project Kickoff Workshop</h4>
+        <p>A two-hour workshop to explore your business goals, review what materials we need, and discuss the pages to include on your website.</p>
+      </div>
+      <div class="process-card">
+        <h4>3. Beta Design</h4>
+        <p>We take 3 weeks to build your website beta. During this time your current website remains active. We’ll keep you updated along the way.</p>
+      </div>
+      <div class="process-card">
+        <h4>4. Beta Revision</h4>
+        <p>We send a copy of the beta via ClickUp, gather your feedback, and then add the finishing touches.</p>
+      </div>
+      <div class="process-card">
+        <h4>5. Website Launch</h4>
+        <p>We update your domain to point your existing URL to the new website. We don't change your email or servers.</p>
+      </div>
+      <div class="process-card">
+        <h4>6. Ongoing Updates</h4>
+        <p>Our top performing clients consistently add new images, articles, and reviews. It's free to add content. So why not put your best foot forward?</p>
+      </div>
+    </div>
+  </section>
 
   <!-- Plans Section -->
   <section id="plans" class="plans container" aria-labelledby="plans-heading">
