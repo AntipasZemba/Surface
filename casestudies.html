@@ -1,306 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Case Studies | Surface</title>
-  <link rel="icon" href="assets/favicon2.png" type="image/png">
-  <style>
-    /* ========== Global Styles ========== */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Studies | Surface</title>
+    <!-- Meta Description -->
+    <meta
+        name="description"
+        content="Surface is a full-service creative agency specializing in web design, branding, UX/UI, and full-stack development for modern brands."
+    />
+    <!-- Canonical -->
+    <link rel="canonical" href="https://surface-io.netlify.app/" />
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://surface-io.netlify.app/" />
+    <link rel="alternate" hreflang="fr" href="https://surface-io.netlify.app/" />
+    <link rel="alternate" hreflang="x-default" href="https://surface-io.netlify.app/" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Surface | Full Service Creative Agency" />
+    <meta
+        property="og:description"
+        content="We design and build high-impact digital experiences through web design, branding, UX/UI, and development."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://surface-io.netlify.app/" />
+    <meta property="og:image" content="https://surface-io.netlify.app/" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Surface | Full Service Creative Agency" />
+    <meta
+        name="twitter:description"
+        content="Creative agency delivering web design, branding, and digital solutions."
+    />
+    <meta name="twitter:image" content="https://surface-io.netlify.app/" />
+    <link rel="stylesheet" href="style/styles.css">
+    <script src="JS/script.js"></script>
+    <link rel="alternate" hreflang="en" href="https://surface-io.netlify.app/" />
+    <link rel="alternate" hreflang="fr" href="https://surface-io.netlify.app/fr/" />
+    <link rel="alternate" hreflang="x-default" href="https://surface-io.netlify.app/" />
+    <link rel="icon" href="assets/favicon2.png" type="image/png">
+    <style>
+        /* ========== Global Styles ========== */
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        }
 
-    /* Body + gradient background */
-    body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    overflow-x: hidden;
-    background: linear-gradient(315deg, rgb(95, 41, 91) 3%,
-    rgb(43, 80, 117) 38%,
-    rgb(40, 99, 96) 68%,
-    rgb(97, 33, 33) 98%);
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    background-attachment: fixed;
-    color: white;
-    }
+        /* Body + gradient background */
+        body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow-x: hidden;
+        background: linear-gradient(315deg, rgb(95, 41, 91) 3%,
+        rgb(43, 80, 117) 38%,
+        rgb(40, 99, 96) 68%,
+        rgb(97, 33, 33) 98%);
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+        color: white;
+        }
 
-    /* Gradient animation */
-    @keyframes gradient {
-    0% { background-position: 0% 0%; }
-    50% { background-position: 100% 100%; }
-    100% { background-position: 0% 0%; }
-    }
+        /* Gradient animation */
+        @keyframes gradient {
+        0% { background-position: 0% 0%; }
+        50% { background-position: 100% 100%; }
+        100% { background-position: 0% 0%; }
+        }
 
-    /* Wave background */
-    .wave-background {
-    position: fixed;
-    inset: 0;
-    overflow: hidden;
-    z-index: -1; /* behind all content */
-    }
-
-    .wave {
-    background: rgba(255,255,255,0.25);
-    border-radius: 1000% 1000% 0 0;
-    position: fixed;
-    width: 200%;
-    height: 12em;
-    bottom: 0;
-    left: 0;
-    transform: translate3d(0,0,0);
-    opacity: 0.8;
-    animation: wave 10s -3s linear infinite;
-    z-index: -1;
-    }
-
-    .wave:nth-of-type(2) {
-    bottom: -1.25em;
-    animation: wave 18s linear reverse infinite;
-    opacity: 0.8;
-    }
-
-    .wave:nth-of-type(3) {
-    bottom: -2.5em;
-    animation: wave 20s -1s reverse infinite;
-    opacity: 0.9;
-    }
-
-    @keyframes wave {
-    2% { transform: translateX(1); }
-    25% { transform: translateX(-25%); }
-    50% { transform: translateX(-50%); }
-    75% { transform: translateX(-25%); }
-    100% { transform: translateX(1); }
-    }
-
-    /* ========== Header ========== */
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      padding: 2rem 3rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 100;
-      mix-blend-mode: difference;
-    }
-
-    .logo {
-      letter-spacing: 0.3em;
-      font-size: 1.2rem;
-      text-decoration: none;
-      color: white;
-    }
-
-    .menu-trigger {
-      background: none;
-      border: none;
-      color: white;
-      font-size: 0.8rem;
-      letter-spacing: 0.2em;
-      cursor: pointer;
-    }
-
-    /* ========== Fullscreen Menu ========== */
-    .nav-overlay {
+        /* Wave background */
+        .wave-background {
         position: fixed;
         inset: 0;
-        background: #111;
-        z-index: 200;
+        overflow: hidden;
+        z-index: -1; /* behind all content */
+        }
+
+        .wave {
+        background: rgba(255,255,255,0.25);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        bottom: 0;
+        left: 0;
+        transform: translate3d(0,0,0);
+        opacity: 0.8;
+        animation: wave 10s -3s linear infinite;
+        z-index: -1;
+        }
+
+        .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+        }
+
+        .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+        }
+
+        @keyframes wave {
+        2% { transform: translateX(1); }
+        25% { transform: translateX(-25%); }
+        50% { transform: translateX(-50%); }
+        75% { transform: translateX(-25%); }
+        100% { transform: translateX(1); }
+        }
+
+        /* ========== Header ========== */
+        header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 2rem 3rem;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        transform: translateY(-100%);
-        transition: transform 0.8s cubic-bezier(0.76, 0, 0.24, 1);
-    }
+        z-index: 100;
+        mix-blend-mode: difference;
+        }
 
-    .nav-overlay.active {
-        transform: translateY(0);
-    }
+        .logo {
+        letter-spacing: 0.3em;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: white;
+        }
 
-    .close-menu {
-        position: absolute;
-        top: 2.5rem;
-        right: 3rem;
+        .menu-trigger {
         background: none;
         border: none;
         color: white;
-        font-size: 2rem;
+        font-size: 0.8rem;
+        letter-spacing: 0.2em;
         cursor: pointer;
-        transition: transform 0.3s ease;
-    }
+        }
 
-    .close-menu:hover {
-        transform: rotate(90deg);
-    }
+        /* ========== Fullscreen Menu ========== */
+        .nav-overlay {
+            position: fixed;
+            inset: 0;
+            background: #111;
+            z-index: 200;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(-100%);
+            transition: transform 0.8s cubic-bezier(0.76, 0, 0.24, 1);
+        }
 
-    .nav-links {
-        list-style: none;
-        text-align: center;
-    }
+        .nav-overlay.active {
+            transform: translateY(0);
+        }
 
-    .nav-links li {
-        margin: 1.5rem 0;
-        overflow: hidden;
-    }
+        .close-menu {
+            position: absolute;
+            top: 2.5rem;
+            right: 3rem;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
 
-    .nav-links a {
-        color: white;
-        text-decoration: none;
+        .close-menu:hover {
+            transform: rotate(90deg);
+        }
+
+        .nav-links {
+            list-style: none;
+            text-align: center;
+        }
+
+        .nav-links li {
+            margin: 1.5rem 0;
+            overflow: hidden;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 4rem;
+            font-weight: 200;
+            letter-spacing: -0.02em;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .p {
+            margin: 10.5rem 0;
+        }
+
+
+        /* ========== Page Intro ========== */
+        .page-intro {
+        padding: 12rem 3rem 6rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        }
+
+        .page-intro h1 {
         font-size: 4rem;
         font-weight: 200;
-        letter-spacing: -0.02em;
-        display: block;
-        transition: color 0.3s ease;
-    }
+        letter-spacing: -0.03em;
+        margin-bottom: 1.5rem;
+        }
 
-    .nav-links a:hover {
-        color: rgba(255, 255, 255, 0.5);
-    }
-    .p {
-        margin: 10.5rem 0;
-    }
+        .page-intro p {
+        max-width: 600px;
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: rgba(255,255,255,0.7);
+        }
 
-
-    /* ========== Page Intro ========== */
-    .page-intro {
-      padding: 12rem 3rem 6rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .page-intro h1 {
-      font-size: 4rem;
-      font-weight: 200;
-      letter-spacing: -0.03em;
-      margin-bottom: 1.5rem;
-    }
-
-    .page-intro p {
-      max-width: 600px;
-      font-size: 1.05rem;
-      line-height: 1.7;
-      color: rgba(255,255,255,0.7);
-    }
-
-    /* ========== Case Studies ========== */
-    .projects {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 3rem 8rem;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 8rem;
-    }
-
-    .project {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .project:nth-child(even) {
-      grid-template-columns: 1fr 1.2fr;
-    }
-
-    .project-image {
-      width: 100%;
-      height: 320px;
-      overflow: hidden;
-      background: #222;
-    }
-
-    .project-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.6s ease;
-    }
-
-    .project:hover .project-image img {
-      transform: scale(1.05);
-    }
-
-    .project-content h2 {
-      font-size: 2.5rem;
-      font-weight: 200;
-      margin-bottom: 1rem;
-    }
-
-    .project-content p {
-      font-size: 1rem;
-      line-height: 1.7;
-      color: rgba(255,255,255,0.7);
-      margin-bottom: 1.5rem;
-    }
-
-    .project-meta {
-      font-size: 0.75rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.5);
-    }
-
-    .project-btn {
-    display: inline-block;
-    margin-top: 1.5rem;
-    padding: 0.6rem 2rem;
-    border: 1px solid white;
-    color: white;
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    cursor: pointer;
-    }
-
-    .project-btn:hover {
-    background: white;
-    color: black;
-    transform: translateY(-2px);
-    }
-
-    /* ========== Footer ========== */
-    footer {
-      text-align: center;
-      font-size: 0.75rem;
-      opacity: 0.6;
-      padding-bottom: 3rem;
-    }
-
-    /* ========== Responsive ========== */
-    @media (max-width: 900px) {
-      .project {
+        /* ========== Case Studies ========== */
+        .projects {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 3rem 8rem;
+        display: grid;
         grid-template-columns: 1fr;
-        gap: 2.5rem;
-      }
+        gap: 8rem;
+        }
 
-      .project:nth-child(even) {
-        grid-template-columns: 1fr;
-      }
+        .project {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 4rem;
+        align-items: center;
+        }
 
-      .project-image {
-        height: 300px;
-      }
+        .project:nth-child(even) {
+        grid-template-columns: 1fr 1.2fr;
+        }
 
-      .page-intro h1 {
+        .project-image {
+        width: 100%;
+        height: 320px;
+        overflow: hidden;
+        background: #222;
+        }
+
+        .project-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+        }
+
+        .project:hover .project-image img {
+        transform: scale(1.05);
+        }
+
+        .project-content h2 {
         font-size: 2.5rem;
-      }
+        font-weight: 200;
+        margin-bottom: 1rem;
+        }
 
-      header {
-        padding: 1.5rem;
-      }
-    }
-  </style>
+        .project-content p {
+        font-size: 1rem;
+        line-height: 1.7;
+        color: rgba(255,255,255,0.7);
+        margin-bottom: 1.5rem;
+        }
+
+        .project-meta {
+        font-size: 0.75rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.5);
+        }
+
+        .project-btn {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 0.6rem 2rem;
+        border: 1px solid white;
+        color: white;
+        font-size: 0.8rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        cursor: pointer;
+        }
+
+        .project-btn:hover {
+        background: white;
+        color: black;
+        transform: translateY(-2px);
+        }
+
+        /* ========== Footer ========== */
+        footer {
+        text-align: center;
+        font-size: 0.75rem;
+        opacity: 0.6;
+        padding-bottom: 3rem;
+        }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 900px) {
+        .project {
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+        }
+
+        .project:nth-child(even) {
+            grid-template-columns: 1fr;
+        }
+
+        .project-image {
+            height: 300px;
+        }
+
+        .page-intro h1 {
+            font-size: 2.5rem;
+        }
+
+        header {
+            padding: 1.5rem;
+        }
+        }
+    </style>
 </head>
 
 <body>
