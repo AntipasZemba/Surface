@@ -138,7 +138,7 @@ menuOpen.addEventListener('click', () => {
 The contact form encodes user input and opens the user's default mail client:
 
 ```javascript
-window.location.href = `mailto:antipaszemba@icloud.com?subject=${subject}&body=${body}`;
+window.location.href = `my@email.com?subject=${subject}&body=${body}`;
 ```
 
 This keeps the site fully static while enabling inquiries.
