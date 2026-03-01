@@ -50,38 +50,6 @@ It is optimized for performance, clarity, and modern aesthetics.
 │
 └── README.md
 
-```
-
-/ (root)
-
-├── index.html          # Homepage
-
-├── about.html          # About & Team page
-
-├── casestudies.html    # Portfolio / Case Studies
-
-├── contact.html        # Contact form (mailto integration)
-
-├── service.html        # Services & Plans page
-
-├── style/
-
-└── styles.css      # Main stylesheet
-
-├── JS/
-
-└── script.js       # Shared JavaScript
-
-├── assets/
-
-├── images
-
-└── favicon2.png
-
-└── README.md
-
-````
-
 ---
 
 ## 🧩 Pages Breakdown
