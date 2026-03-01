@@ -33,6 +33,7 @@ It is optimized for performance, clarity, and modern aesthetics.
 ```
 
 / (root)
+
 ├── index.html          # Homepage
 
 ├── about.html          # About & Team page
@@ -44,14 +45,18 @@ It is optimized for performance, clarity, and modern aesthetics.
 ├── service.html        # Services & Plans page
 
 ├── style/
-│   └── styles.css      # Main stylesheet
+
+└── styles.css      # Main stylesheet
 
 ├── JS/
-│   └── script.js       # Shared JavaScript
+
+└── script.js       # Shared JavaScript
 
 ├── assets/
-│   ├── images
-│   └── favicon2.png
+
+├── images
+
+└── favicon2.png
 
 └── README.md
 
@@ -218,8 +223,8 @@ Surface is built by a small, frontend-focused team passionate about:
 
 For collaborations or inquiries:
 
-📧 [antipaszemba@icloud.com](mailto:antipaszemba@icloud.com)
-🌐 [https://surface-io.netlify.app/](https://surface-io.netlify.app/)
+📧 [Email ME](mailto:antipaszemba@icloud.com)
+🌐 [Website](https://surface-io.netlify.app/)
 
 ---
 
