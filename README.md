@@ -53,7 +53,6 @@ It is optimized for performance, clarity, and modern aesthetics.
 │   ├── images
 │   └── favicon2.png
 
-
 └── README.md
 
 ````
