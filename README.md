@@ -33,7 +33,9 @@ It is optimized for performance, clarity, and modern aesthetics.
 ```
 
 / (root)
+
 │
+
 ├── index.html          # Homepage
 ├── about.html          # About & Team page
 ├── casestudies.html    # Portfolio / Case Studies
