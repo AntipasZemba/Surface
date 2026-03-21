@@ -98,24 +98,24 @@
         </footer> -->
 
         <script>
-        const menuOpen = document.getElementById('menuOpen');
-        const menuClose = document.getElementById('menuClose');
-        const navOverlay = document.getElementById('navOverlay');
+            const menuOpen = document.getElementById('menuOpen');
+            const menuClose = document.getElementById('menuClose');
+            const navOverlay = document.getElementById('navOverlay');
 
-        menuOpen.addEventListener('click', () => {
-            navOverlay.classList.add('active');
-        });
+            menuOpen.addEventListener('click', () => {
+                navOverlay.classList.add('active');
+            });
 
-        menuClose.addEventListener('click', () => {
-            navOverlay.classList.remove('active');
-        });
-
-        // Close menu on link click
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
+            menuClose.addEventListener('click', () => {
                 navOverlay.classList.remove('active');
             });
-        });
+
+            // Close menu on link click
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navOverlay.classList.remove('active');
+                });
+            });
         </script>
     </body>
 </html>
