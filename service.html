@@ -634,6 +634,17 @@
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => navOverlay.classList.remove('active'));
     });
+
+    // --- PASS PLAN TO CONTACT FORM ---
+    document.querySelectorAll('.hire-btn').forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault(); // Stop immediate navigation
+        
+        const planName = this.getAttribute('data-plan');
+        // Redirects to Contact.html?plan=PlanName
+        window.location.href = `Contact.html?plan=${encodeURIComponent(planName)}`;
+      });
+    });
   </script>
 </body>
 </html>
