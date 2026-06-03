@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Surface</title>
+    <!-- Meta Description -->
+    <meta
+        name="description"
+        content="Surface is a full-service creative agency specializing in web design, branding, UX/UI, and full-stack development for modern brands."
+    />
+    <!-- Canonical -->
+    <link rel="canonical" href="https://surface-io.netlify.app/" />
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://surface-io.netlify.app/" />
+    <link rel="alternate" hreflang="fr" href="https://surface-io.netlify.app/" />
+    <link rel="alternate" hreflang="x-default" href="https://surface-io.netlify.app/" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Surface | Full Service Creative Agency" />
+    <meta
+        property="og:description"
+        content="We design and build high-impact digital experiences through web design, branding, UX/UI, and development."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://surface-io.netlify.app/" />
+    <meta property="og:image" content="https://surface-io.netlify.app/" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Surface | Full Service Creative Agency" />
+    <meta
+        name="twitter:description"
+        content="Creative agency delivering web design, branding, and digital solutions."
+    />
+    <meta name="twitter:image" content="https://surface-io.netlify.app/" />
+    <script src="JS/script.js"></script>
+    <link rel="alternate" hreflang="en" href="https://surface-io.netlify.app/" />
+    <link rel="alternate" hreflang="fr" href="https://surface-io.netlify.app/fr/" />
+    <link rel="alternate" hreflang="x-default" href="https://surface-io.netlify.app/" />
+    <link rel="icon" href="assets/favicon2.png" type="image/png">
+    <link rel="stylesheet" href="style/styles.css">
+    <style>
+    /* ========== Global Styles ========== */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; */
+        background-color: #ffffff;
+        color: #000000;
+        overflow-x: hidden;
+    }
+    /* ==========================================
+        SECTION 1: Biographical Layout (With Top Gap)
+    ========================================== */
+    .container {
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        min-height: calc(100vh - 120px); /* Adjusts heights cleanly considering the new margin */
+        display: grid;
+        grid-template-columns: 25% 75%;
+        margin-top: 120px; /* CREATES THE CLEAR GAP BELOW THE NAV BAR */
+    }
+
+    .left-panel {
+        position: relative;
+        height: 95%;
+        background-color: #eae6df;
+    }
+
+    .left-panel img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .right-panel {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .text-section {
+        padding: 4% 40% 5% 6%; /* Balanced top padding now that the margin gap exists */
+        background-color: #ffffff;
+    }
+
+    .text-section h1 {
+        font-size: clamp(2rem, 3.5vw, 4rem);
+        font-weight: 400;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        margin-bottom: 2.5rem;
+    }
+
+    .text-section p {
+        font-size: clamp(0.85rem, 1vw, 1.1rem);
+        line-height: 1.6;
+        color: #1a1a1a;
+        max-width: 480px;
+    }
+
+    .bottom-black-bar {
+        background-color: #ffffff;
+        height: 25vh;
+        width: 100%;
+        margin-top: auto;
+    }
+
+    .right-image-wrapper {
+        position: absolute;
+        right: 0;
+        bottom: 3.5vh;
+        width: 48%;
+        height: 52vh;
+        background-color: #eae6df;
+        z-index: 10;
+    }
+
+    .right-image-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+
+    /* ==========================================
+        SECTION 4: Minimalist Editorial Footer
+    ========================================== */
+    .site-footer {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 4rem 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: clamp(0.8rem, 0.9vw, 1rem);
+        letter-spacing: -0.01em;
+    }
+
+
+    .footer-copyright {
+        color: #000000;
+    }
+
+    .footer-links {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .footer-links span {
+        font-weight: 500;
+        margin-right: 0.5rem;
+    }
+
+    .footer-links a {
+        color: #000000;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+        color: #666666;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 0%;
+        }
+        50% {
+            background-position: 100% 100%;
+        }
+        100% {
+            background-position: 0% 0%;
+        }
+    }
+    @media (max-width: 900px) {
+        header {
+            padding: 1.5rem 6%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 80px; /* Scales down layout gap spacing contextually on mobile layouts */
+        }
+        
+        .left-panel {
+            height: 60vh;
+        }
+
+        .text-section {
+            padding: 10% 10% 5% 10%;
+        }
+
+        .text-section p {
+            max-width: 100%;
+        }
+
+        .right-image-wrapper {
+            position: relative;
+            width: 90%;
+            height: 50vh;
+            margin: 0 auto;
+            bottom: -20px;
+        }
+
+        .bottom-black-bar {
+            height: 150px;
+        }
+
+        .site-footer {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
+            padding: 3rem 10%;
+        }
+
+        .footer-links {
+            flex-wrap: wrap;
+            gap: 1rem 1.5rem;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="bg-container">
+        <div class="animated-bg"></div>
+        <div class="bg-overlay"></div>
+    </div>
+
+    <header>
+        <a href="index.html" class="logo">SURFACE</a>
+        <button class="menu-trigger" id="menuOpen">
+          <span>MENU</span>
+        </button>
+    </header>
+
+    <div class="nav-overlay" id="navOverlay">
+        <button class="close-menu" id="menuClose">&times;</button>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="CaseStudies.html">Portfolio</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Service.html">Services</a></li>
+        </ul>    
+    </div>
+
+    <!-- About -->
+    <div class="container">
+        <div class="left-panel">
+            <img src="assets/FK.jpeg" alt="Charlotte Abbeys Left Side Graphic">
+        </div>
+
+        <div class="right-panel">
+            <div class="text-section">
+                <h1>Francois Kabasele<br>& Antipas Zemba</h1>
+                <p>
+                    Surface helps small businesses build websites and web apps that are simple, fast, and easy to use.
+                    We’re a small team of three frontend-focused developers who care about how things feel on the web, 
+                    not just how they look. We focus on clarity, performance, and thoughtful design that helps people understand your business without friction. <br>
+                    We believe in clean layouts, smooth interactions, and building only what you actually need. No bloated features, no overcomplication.
+                    Because we’re a small team, the work stays personal. You’ll work directly with us from start to finish, with clear communication and no handoffs.
+                </p>
+            </div>
+
+            <div class="right-image-wrapper">
+                <img src="assets/Antipas.jpg" alt="Marie Celestin Right Side Graphic Layer">
+            </div>
+
+            <div class="bottom-black-bar"></div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-copyright">
+            &copy; 2026 - Surface Studio / All Rights Reserved
+        </div>
+        <div class="footer-links">
+            <span>Return</span>
+            <a href="index.html" target="_blank" rel="noopener">Home</a>
+            <a href="casestudies.html" target="_blank" rel="noopener">Portfolio</a>
+            <a href="contact.html" target="_blank" rel="noopener">Contact</a>
+            <a href="service.html" target="_blank" rel="noopener">Services</a>
+        </div>
+    </footer>
+
+    <script>
+      const menuOpen = document.getElementById('menuOpen');
+      const menuClose = document.getElementById('menuClose');
+      const navOverlay = document.getElementById('navOverlay');
+
+      menuOpen.addEventListener('click', () => {
+          navOverlay.classList.add('active');
+      });
+
+      menuClose.addEventListener('click', () => {
+          navOverlay.classList.remove('active');
+      });
+
+      // Close menu on link click
+      document.querySelectorAll('.nav-links a').forEach(link => {
+          link.addEventListener('click', () => {
+              navOverlay.classList.remove('active');
+          });
+      });
+    </script>
+</body>
+</html>
